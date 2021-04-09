@@ -9,3 +9,11 @@ export default new Vuex.Store({
   actions: {},
   modules: {},
 });
+
+export function testFn(): void {
+  const a = undefined;
+  const b = 1;
+
+  const c = a ?? b;
+  console.log(c);
+}
